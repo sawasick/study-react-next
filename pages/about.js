@@ -8,7 +8,7 @@ import { Headline } from '@/components/Headline'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
