@@ -18,7 +18,17 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Headline title="About Page" page="about"/>
+        <Headline
+          title = "About Page"
+          page = "about"
+          number = {5}
+          array = {[1, 2, 3]}
+          obj = {{name:"hoge", age:21}}
+          bool // trueの時はこの記述でOK(falseは省略できない)
+          onClick = {() => alert("クリック")} // メソッドも渡せる
+        >
+          <code className={styles.code}>pages/about.js</code>
+        </Headline>
 
         <Links />
       </main>

@@ -2,13 +2,13 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
 export function Headline(props) {
-  console.log(props);
   return (
     <div className={styles.description}>
+      <button onClick={props.onClick} />
       <p>This is {props.title}</p>
       <p>
         Get started by editing&nbsp;
-        <code className={styles.code}>pages/{props.page}.js</code>
+        {props.children}
       </p>
       <div>
         <a

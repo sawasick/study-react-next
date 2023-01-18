@@ -18,7 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Headline title="Index Page" page="index"/>
+        <Headline title="Index Page" page="index">
+          {/* ここに書いたものはchildrenとして渡る */}
+          <code className={styles.code}>pages/index.js</code>
+        </Headline>
 
         <Links />
       </main>
