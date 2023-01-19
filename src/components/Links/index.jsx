@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Inter, Tienne, Titillium_Web } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '/src/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
